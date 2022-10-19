@@ -1,0 +1,31 @@
+\documentclass[fleqn, 10pt]{article}
+
+%Definimos el título
+\title{Teoria de Autómatas y Lenguajes Formales \\[.4\baselineskip] Práctica 1: Latex y expresiones regurales}
+\author{Piedad, Paredes Garcia}
+\date{\today}
+
+%Comienzo del documento
+\begin{document}
+
+%Generamos el título
+\maketitle
+
+EJERCICIO 1
+\\[.8\baselineskip]
+Para $ n=1: \mathcal{R} ^1 = \mathcal{R}$ \\
+Para $n\geq2: (a,b) \in \mathcal{R} ^n $ sii $ \exists x \in A | (a,x) \in \mathcal{R} ^{n-1}$ and $(a,b) \in \mathcal{R}$ \\[.8\baselineskip]
+$\mathcal{R} ^1 = \{(1,1),(1,2),(2,3),(3,4)\}$\\
+$\mathcal{R} ^2 = \{(1,1),(1,2),(1,3),(2,4)\}$\\
+Una vez calculados $\mathcal{R} ^1$ y $\mathcal{R} ^2$ podemos calcular $\mathcal{R} ^3 $\\
+ $\mathcal{R} ^3 = \{(1,1),(1,2),(1,3),(1,4)\}$ \\[.8\baselineskip]
+ 
+ Ahora comprobamos la solucion abriendo powerrelation.m en Octave e insertando en la ventana de comandos: \\
+ powerrelation({['1', '1'], ['1', '2'], ['2', '3'],['3', '4']}, 3)
+ 
+ 
+
+
+
+\end{document}
+
